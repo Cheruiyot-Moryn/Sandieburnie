@@ -1,4 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("PolarisLoginActivityRoot.entrypoint",["JSResourceForInteraction"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:{}}},root:c("JSResourceForInteraction")("PolarisLoginActivityRoot.react").__setRef("PolarisLoginActivityRoot.entrypoint")};g["default"]=a}),98);
-__d("PolarisHelpCenterRoot.entrypoint",["JSResourceForInteraction"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:{}}},root:c("JSResourceForInteraction")("PolarisHelpCenterRoot.react").__setRef("PolarisHelpCenterRoot.entrypoint")};g["default"]=a}),98);

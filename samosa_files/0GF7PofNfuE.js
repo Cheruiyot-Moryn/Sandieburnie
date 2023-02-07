@@ -1,4 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("PolarisPasswordChangeRoot.entrypoint",["JSResourceForInteraction"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:{}}},root:c("JSResourceForInteraction")("PolarisPasswordChangeRoot.react").__setRef("PolarisPasswordChangeRoot.entrypoint")};g["default"]=a}),98);
-__d("PolarisPrivacyAndSecurityRootDeprecated.entrypoint",["JSResourceForInteraction"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){return{queries:{}}},root:c("JSResourceForInteraction")("PolarisPrivacyAndSecurityRootDeprecated.react").__setRef("PolarisPrivacyAndSecurityRootDeprecated.entrypoint")};g["default"]=a}),98);
