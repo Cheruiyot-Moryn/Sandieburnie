@@ -147,6 +147,58 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63824.15484306526!2d36.97825663286223!3d-1.1535773696982121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f38a78cb4e50d%3A0xdaa7fad9c2cbf0fb!2sRuiru!5e0!3m2!1sen!2ske!4v1676298301941!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         Open Maps
                     </a>
-                </div>          
+                </div>   
+                
+                <script src="js/jquery-3.6.0.min.js"></script>
+                <script src="js/parallax.min.js"></script>
+                <script src="js/jquery.singlePageNav.min.js"></script>
+                <script>
+            
+                    function checkAndShowHideMenu() {
+                        if(window.innerWidth < 768) {
+                            $('#tm-nav ul').addClass('hidden');                
+                        } else {
+                            $('#tm-nav ul').removeClass('hidden');
+                        }
+                    }
+            
+                    $(function(){
+                        var tmNav = $('#tm-nav');
+                        tmNav.singlePageNav();
+            
+                        checkAndShowHideMenu();
+                        window.addEventListener('resize', checkAndShowHideMenu);
+            
+                        $('#menu-toggle').click(function(){
+                            $('#tm-nav ul').toggleClass('hidden');
+                        });
+            
+                        $('#tm-nav ul li').click(function(){
+                            if(window.innerWidth < 768) {
+                                $('#tm-nav ul').addClass('hidden');
+                            }                
+                        });
+            
+                        $(document).scroll(function() {
+                            var distanceFromTop = $(document).scrollTop();
+            
+                            if(distanceFromTop > 100) {
+                                tmNav.addClass('scroll');
+                            } else {
+                                tmNav.removeClass('scroll');
+                            }
+                        });
+                        
+                        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                            anchor.addEventListener('click', function (e) {
+                                e.preventDefault();
+            
+                                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            });
+                        });
+                    });
+                </script>   
 </body>
 </html>
